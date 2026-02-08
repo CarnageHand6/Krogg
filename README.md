@@ -1,2 +1,2 @@
-- This will be Krogg's Website <br>
-Start here: https://carnagehand6.github.io/Krogg/main.html
+- This will be Krogg's Website
+- Start here: <a href="https://carnagehand6.github.io/Krogg/main.html">Click here to start</a>
