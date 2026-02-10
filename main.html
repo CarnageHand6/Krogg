@@ -1,16 +1,18 @@
 <html>
-<head>
-	<title>Dashboard</title>
+<head> <!-- This is the dashboard where all starts -->
+    <title>Dashboard</title>
 </head>
-<frameset rows="10%,4%,86%" noresize="noresize">
-	<frame src="about:blank" name="topFrame" scrolling="no">// header
-	<frameset cols="33%,33%,33%"> // this will be g,k,r buttons
-		<frame></frame>
-		<frame></frame>
-		<frame></frame>
-	</frameset>
-	<frameset cols="10%,90%" noresize="noresize">
-		<frame src="about:blank" name="sideBar">
-		<frame src="about:blank" name="mainContent">
-	</frameset></frameset>
+<frameset rows="10%,6%,84%" noresize="noresize"> 
+    <frame src="frame/f_header.html" name="headFrame" scrolling="no">  <!-- header -->
+    <frameset cols="33%,34%,33%" noresize="noresize"> <!-- this will be g,k,r buttons -->
+        <frame src="frame/f_buttons.html?type=Ghezolg" name="frameG">
+        <frame src="frame/f_buttons.html?type=Kabardo" name="frameK">
+        <frame src="frame/f_buttons.html?type=Ronsar" name="frameR">
+    </frameset> <!-- No code for now -->
+    <!--<frameset cols="15%,85%" noresize="noresize">
+        <frame src="about:blank" name="sideBar">
+        <frame src="about:blank" name="mainContent">
+    </frameset>
+    -->
+</frameset>
 </html>

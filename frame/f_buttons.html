@@ -1,0 +1,52 @@
+<html>
+<head>
+    <style>
+        body { 
+            background: #1a1a1a; 
+            color: white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        a { 
+            color: #ff4444; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border: 2px solid #555; 
+            padding: 8px 20px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        a:hover { 
+            background: #ff4444; 
+            color: white;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get('type');
+        const display = document.getElementById('content');
+
+        if (type) {
+            const cleanType = type.toLowerCase();
+
+            if (cleanType === 'ghezolg') {
+                display.innerHTML = `<a href="../portfolio/Ghez'olg/g_portfolio.html" target="_top">GHEZ'OLG</a>`;
+            } else if (cleanType === 'kabardo') {
+                display.innerHTML = `<a href="../portfolio/Ka'bardo/k_portfolio.html" target="_top">KA'BARDO</a>`;
+            } else if (cleanType === 'ronsar') {
+                display.innerHTML = `<a href="../portfolio/Ron'sar/r_portfolio.html" target="_top">RON'SAR</a>`;
+            }
+        }
+    </script>
+</body>
+</html>
